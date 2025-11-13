@@ -216,7 +216,7 @@ nav {
 } 
 .offcanvas {
   flex-direction: row !important;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ddc96777;
   backdrop-filter: blur(5px);
 }
 .navbar-toggler {
@@ -240,7 +240,6 @@ nav {
 
 /* Banner Section */
 .banner {
-  /* min-height: 90vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,8 +252,6 @@ nav {
 }
 .cont {
   margin-top: 100px;
-  margin-left: 33px;
-  /* max-width: 828px; */
 }
 .cont > h1 {
   color: var(--third-color);
@@ -267,7 +264,6 @@ nav {
   font-family: "Clash Grotesk";
   font-size: 22px;
   margin-top: 20px;
-  /* max-width: 661px; */
 }
 .cont > p > a {
   color: var(--primary-color);
@@ -357,10 +353,7 @@ nav {
 
 /* Accordion Section */
 .accordion-box {
-  /* border: 1px solid var(--primary-color); */
   border-radius: 70px;
-  /* max-width: 1062px; */
-  /* background: linear-gradient(); */
 }
 
 .faq-container {
@@ -568,6 +561,8 @@ background-color: var(--third-color);
   .navbar-nav,
   .navbtn {
     text-align: center !important;
+    flex-direction: column;
+    gap: 1.5rem !important;
   }
   .nav-item > a {
     color: var(--secondary-color);

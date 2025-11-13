@@ -345,7 +345,6 @@ nav {
 /* Dream Section */
 .dream {
   padding-top: 100px;
-  /* background: var(--secondary-color); */
 }
 .dream > div > div > .heading {
   max-width: 901px;
@@ -674,8 +673,6 @@ form > .heading-border::after {
 
 /* Testimonial Section */
 .outer-box {
-  /* background: var(--secondary-color); */
-  /* border: 1px solid var(--primary-color); */
   border-radius: 12px;
   margin: 0 auto;
   background: linear-gradient(
