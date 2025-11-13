@@ -1,0 +1,540 @@
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.eot");
+  src: url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.svg#Clash Display Variable")
+      format("svg");
+}
+@font-face {
+  font-family: "Arlita";
+  src: url("https://db.onlinewebfonts.com/t/6ab41932edfd01d7f189f798a4099c0a.eot");
+  src: url("https://db.onlinewebfonts.com/t/6ab41932edfd01d7f189f798a4099c0a.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6ab41932edfd01d7f189f798a4099c0a.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6ab41932edfd01d7f189f798a4099c0a.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/6ab41932edfd01d7f189f798a4099c0a.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6ab41932edfd01d7f189f798a4099c0a.svg#Arlita")
+      format("svg");
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url(../assets/ClashGrotesk_Complete/Fonts/TTF/ClashGrotesk-Variable.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Common Class */
+body {
+  font-family: "";
+  background: #000;
+}
+:root {
+  --primary-color: #ddca67;
+  --secondary-color: #000000;
+  --third-color: #ffffff;
+}
+.container {
+  max-width: 1520px !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.row > * {
+  padding: 0 15px;
+}
+ul > li {
+  list-style-type: none;
+}
+ul {
+  padding-left: 0 !important;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-wrap: nowrap;
+  color: black;
+}
+section,
+footer {
+  position: relative;
+  z-index: 11;
+  /* background: var(--secondary-color); */
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+span {
+  color: var(--primary-color);
+}
+main {
+  background: url(../assets/home.png);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: brightness(20%);
+  -webkit-backdrop-filter: brightness(20%);
+  z-index: 1;
+}
+
+/* Header Section */
+
+.header-section {
+  position: relative;
+  background: var(--secondary-color);
+}
+nav {
+  background: var(--secondary-color);
+}
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 45px;
+}
+.nav-item > a {
+  color: var(--third-color);
+  font-family: "Clash Display Variable";
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-item > a:hover {
+  color: var(--primary-color);
+}
+.nav-item > a::before,
+.nav-item > a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  border: 2px solid var(--primary-color);
+  transition: all 0.4s ease-out;
+}
+.nav-item > a::before {
+  top: -10px;
+  left: -10px;
+  border-right: none;
+  border-bottom: none;
+}
+.nav-item > a::after {
+  bottom: -10px;
+  right: -10px;
+  border-left: none;
+  border-top: none;
+}
+.nav-item > a:hover::before,
+.nav-item > a:hover::after {
+  opacity: 1;
+  transform: translate(5px 5px);
+}
+
+.offcanvas {
+  flex-direction: row !important;
+  background-color: #ddc96777;
+  backdrop-filter: blur(5px);
+}
+.navbar-toggler {
+  background: var(--third-color);
+}
+.nav-logo {
+  min-height: 60px;
+  max-width: 100px;
+}
+
+.nav-logo > a {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Banner Section */
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.cont {
+  margin-top: 100px;
+  /* margin-left: 33px; */
+  /* max-width: 828px; */
+}
+.cont > h1 {
+  color: var(--third-color);
+  font-family: "Arlita";
+  font-size: 80px;
+  text-wrap: wrap;
+}
+.contact-info {
+  color: var(--third-color);
+  font-family: "Clash Grotesk";
+  font-size: 22px;
+  margin-top: 20px;
+  /* max-width: 661px; */
+}
+.contact-info > div > p {
+  letter-spacing: 5px;
+}
+.contact-info > div > a {
+  color: var(--third-color);
+}
+/* Form Section */
+/* .form-section {
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+    } */
+.form-label {
+  color: #d6d6d6;
+}
+.form-control {
+  background: #181817;
+  border: 1px solid rgba(219, 199, 97, 0.35);
+  color: #ddd;
+  border-radius: 25px;
+  padding: 12px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+.form-select {
+  background: #181817;
+  border: 1px solid rgba(219, 199, 97, 0.35);
+  color: #ddd;
+  border-radius: 25px;
+  padding: 12px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+.form-select > option {
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+}
+option:hover {
+  background: var(--primary-color) !important;
+}
+.form-control:focus {
+  color: var(--third-color);
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-select {
+  background-image: url(../assets/Group\ 6375.png);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+textarea.form-control {
+  min-height: 180px;
+}
+
+/* Checkboxes */
+.form-check-label {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fde1569d;
+}
+
+.heading-border {
+  position: relative;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  height: 60px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(
+    205deg,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+}
+.heading-border::after {
+  content: "";
+  color: var(--third-color);
+  font-size: 1.5rem;
+  border-radius: 30px;
+  z-index: 1;
+  position: absolute;
+  background: #000;
+  inset: 1px;
+}
+.heading-btn {
+  position: relative;
+  color: var(--third-color);
+  font-size: 1.5rem;
+  z-index: 2;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.heading-btn:hover {
+  background-color: #ddca67;
+  max-width: 230px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--third-color);
+}
+.heading-border:hover {
+  background: var(--secondary-color);
+}
+
+/* Footer Section  */
+.footer-cont > p {
+  color: var(--third-color);
+  font-size: 25px;
+  font-family: "Clash Display Variable";
+}
+.call {
+  color: var(--third-color);
+  font-size: 25px;
+  font-family: "Clash Display Variable";
+}
+
+.footer-list > li > a {
+  color: var(--third-color);
+  font-size: 25px;
+  font-family: "Clash Display Variable";
+}
+.footer-list > li > a:hover,
+.location > li > a:hover,
+.call:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.footer-heading {
+  color: var(--third-color);
+  font-size: 25px;
+  font-family: "Clash Display Variable";
+}
+.footer-form {
+  padding: 11px 17px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+input {
+  border: none;
+  outline: none;
+  background-color: var(--secondary-color);
+}
+.subscribe {
+  border: none;
+  outline: none;
+  background: var(--primary-color);
+}
+.footer-form > input:focus {
+  color: var(--third-color);
+}
+.footer-icons {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 4px #f1e28c;
+}
+.footer-icons:hover {
+  box-shadow: 0px 0px 10px #f1e28c;
+}
+.footer-icons > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.footer-icons:nth-child(1) {
+  padding: 11px 9px;
+  height: 50px;
+  width: 50px;
+}
+.footer-icons:nth-child(2) {
+  padding: 5px 10px;
+  width: 28px;
+  height: 39px;
+}
+.footer-icons:nth-child(3) {
+  padding: 8px 9px;
+  height: 50px;
+  width: 50px;
+}
+.footer-icons:nth-child(4) {
+  padding: 10px 5px;
+  height: 50px;
+  width: 50px;
+}
+hr {
+  color: var(--primary-color);
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.location > li > a {
+  color: var(--third-color);
+  font-size: 25px;
+  font-family: "Clash Display Variable";
+}
+
+li > hr {
+  width: 2px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 0 10px;
+}
+
+.footer-last,
+.footer-last > a {
+  color: var(--third-color);
+  font-size: 25px;
+  font-family: "Clash Display Variable";
+}
+
+.float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.float-btn:hover {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 992px) {
+  /*Header Section  */
+  .offcanvas {
+    flex-direction: column !important;
+  }
+  .navbar-nav,
+  .nav-item {
+    margin: 0 !important;
+  }
+  .nav-item {
+    margin-bottom: 15px !important;
+  }
+  .navbar-nav,
+  .navbtn {
+    text-align: center !important;
+  }
+  .nav-item > a {
+    color: var(--secondary-color);
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Services Section */
+  .img-col {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .heading-btn {
+    font-size: 17px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  /* Banner  */
+  .contact-info {
+    flex-direction: column;
+  }
+  /* Banner  */
+  .banner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .cont > h1 {
+    font-size: 50px;
+  }
+
+  /* Footer Section */
+  .footer-cont > p {
+    font-size: 15px;
+  }
+  .call {
+    font-size: 15px;
+  }
+
+  .footer-list > li > a {
+    font-size: 15px;
+  }
+  .footer-heading {
+    font-size: 15px;
+  }
+  .location > li > a {
+    font-size: 15px;
+  }
+  .footer-last,
+  .footer-last > a {
+    font-size: 15px;
+  }
+  .footer-icon {
+    margin-top: 20px !important;
+  }
+}

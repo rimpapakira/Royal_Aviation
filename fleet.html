@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Aviation</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/fleet.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header-section">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/nav-logo.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <div class="offcanvas-header d-block d-lg-none">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="active" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="" href="./services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="./fleet.html">Aircraft Fleet</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="navbtn d-flex gap-5">
+              <a href=""><img src="./assets/search.png" alt="" /></a>
+              <a href=""><img src="./assets/user.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="cont">
+                <h1 class="text-capitalize text-center" data-aos="fade-down">
+                  Your private jet fleet. <br />
+                  <span>Simple</span>
+                </h1>
+                <p class="text-capitalize text-center" data-aos="fade-left">
+                  Lorem ipsum dolor sit amet consectetur. Tellus nulla
+                  suspendisse<br />
+                  est odio orci convallis nibh vitae venenatis. Lorem nisl dui
+                  convallis <br />praesent.
+                </p>
+                <p class="text-capitalize text-center" data-aos="fade-right">
+                  Search for your aircraft by manufacturer or try the
+                  <a href="" class="text-capitalize">quick view</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="services">
+        <div class="container">
+          <div class="d-flex align-items-center flex-column gap-4 mw-100">
+            <div class="black-card position-relative overflow-hidden">
+              <div class="row">
+                <div class="col-lg-6 p-4 p-md-5 content-col">
+                  <h2 class="main-title mt-3" data-aos="zoom-in-up">
+                    <span>Bombardier</span>
+                  </h2>
+                  <p class="description" data-aos="fade-down-right">
+                    Bombardier aircraft fly up to 7,700nm with a flight time of
+                    up to 17 hours non-stop, offering seamless and
+                    time-efficient travel. With purpose-built cabin space, these
+                    aircraft are designed for ultimate comfort and productivity
+                    in-flight. Bombardier manufactures two leading aircraft
+                    families – Challenger and Global, both come with facilities
+                    .
+                  </p>
+                  <div class="heading-border" data-aos="fade-up-right">
+                    <a
+                      href=""
+                      class="heading-btn rounded-pill text-center text-capitalize"
+                      >discover bombardier jets
+                      <img src="./assets/btn.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 img-col m-auto" data-aos="fade-up-left">
+                  <img src="./assets/fleet (2).png" alt="Air Ambulance Crew" />
+                </div>
+              </div>
+            </div>
+            <div class="black-card position-relative overflow-hidden">
+              <div class="row">
+                <div class="col-lg-6 img-col m-auto" data-aos="fade-up-right">
+                  <img src="./assets/fleet (1).png" alt="" />
+                </div>
+                <div class="col-lg-6 p-4 p-md-5 content-col text-end">
+                  <h2 class="main-title mt-3" data-aos="zoom-in-up">
+                    <span>Gulfstream</span>
+                  </h2>
+                  <p class="description" data-aos="fade-down-right">
+                    Aircraft manufactured by Gulfstream can fly up to 4,300nm
+                    with a flight time of around 9 hours. The iconic Gulfstream
+                    business jets allow passengers to stay connected in-flight
+                    whether for business or relaxation, and arrive at
+                    destination feeling refreshed due to ultra-low cabin
+                    altitude. Aircraft accommodate up to 16 passeng
+                  </p>
+                  <div class="heading-border ms-auto" data-aos="fade-up-right">
+                    <a
+                      href=""
+                      class="heading-btn rounded-pill text-center text-capitalize"
+                      >discover Gulfstream jets
+                      <img src="./assets/btn.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="black-card position-relative overflow-hidden">
+              <div class="row">
+                <div class="col-lg-6 p-4 p-md-5 content-col">
+                  <h2 class="main-title mt-3" data-aos="zoom-in-up">
+                    <span>Embraer</span>
+                  </h2>
+                  <p class="description" data-aos="fade-down-right">
+                    Aircraft manufactured by Embraer can fly up to 4,600nm with
+                    a flight time of around 8 hours. These Embraer business jets
+                    offer outstanding versatility and wide cabin space for up to
+                    18 passengers seated or 7 sleeping. Aircraft include the
+                    Lineage 1000E, Legacy 650/650E and Praetor 600.
+                  </p>
+                  <div class="heading-border" data-aos="fade-up-right">
+                    <a
+                      href=""
+                      class="heading-btn rounded-pill text-center text-capitalize"
+                      >discover Embraer jets <img src="./assets/btn.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 img-col m-auto" data-aos="fade-up-left">
+                  <img src="./assets/fleet (5).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="black-card position-relative overflow-hidden">
+              <div class="row">
+                <div class="col-lg-6 img-col m-auto" data-aos="fade-up-right">
+                  <img src="./assets/fleet (4).png" alt="" />
+                </div>
+                <div class="col-lg-6 p-4 p-md-5 content-col text-end">
+                  <h2 class="main-title mt-3" data-aos="zoom-in-up">
+                    <span>Cessna</span>
+                  </h2>
+                  <p class="description" data-aos="fade-down-right">
+                    Cessna aircraft can fly up to 4,360nm with a flight time of
+                    around 5 hours. These light jets provide stellar runway
+                    performance with comfortable cabins, which include the
+                    Citation X, Citation XL and Citation XLS/XLS+ aircraft.
+                    Cessna aircraft accommodate up to 7 passengers seated
+                  </p>
+                  <div class="heading-border ms-auto" data-aos="fade-up-right">
+                    <a
+                      href=""
+                      class="heading-btn rounded-pill text-center text-capitalize"
+                      >discover Gulfstream jets
+                      <img src="./assets/btn.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="black-card position-relative overflow-hidden">
+              <div class="row">
+                <div class="col-lg-6 p-4 p-md-5 content-col">
+                  <h2 class="main-title mt-3" data-aos="zoom-in-up">
+                    <span>Dassault</span>
+                  </h2>
+                  <p class="description" data-aos="fade-down-right">
+                    Dassault aircraft can fly up to 5,950nm with a flight time
+                    of around 11 hours. Currently offered is the Falcon 7X, an
+                    aerodynamic and uniquely elegant aircraft with unrivaled
+                    performance, particularly on short runway airports. The
+                    aircraft features an advanced cabin pressure system with
+                    three ample separate living spaces .
+                  </p>
+                  <div class="heading-border" data-aos="fade-up-right">
+                    <a
+                      href=""
+                      class="heading-btn rounded-pill text-center text-capitalize"
+                      >discover embraer jets <img src="./assets/btn.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 img-col m-auto" data-aos="fade-up-left">
+                  <img src="./assets/fleet (3).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="heading-divider text-center mt-5 position-relative z-3">
+        <hr />
+        <p>
+          YOUR FUTURE DEPENDS ON YOU!<span>
+            NOBODY WILL MAKE YOU A WINNER, ONLY YOURSELF!</span
+          >
+        </p>
+        <hr />
+      </div>
+      <!-- Accordion Section -->
+      <section class="pb-5">
+        <div class="container">
+          <div
+            class="accordion-box d-flex align-items-center justify-content-center"
+            data-aos="zoom-in"
+          >
+            <div class="faq-container">
+              <div class="divider">
+                <img src="./assets/Ashi 2.png" alt="" />
+              </div>
+              <div class="heading-border m-auto mb-4">
+                <div class="heading-btn">Common Question</div>
+              </div>
+              <h2 class="heading pb-4" data-aos="zoom-in-up">
+                Common Questions About <span>Royal Aviation</span>
+              </h2>
+
+              <div class="accordion" id="faqAccordion" data-aos="flip-up">
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                    >
+                      What types of aircraft does VistaJet offer access to?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      VistaJet provides a fleet of luxurious aircraft tailored
+                      to meet diverse travel requirements.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                    >
+                      Is the FlowCash course 100% online?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, the FlowCash course is entirely online and
+                      self-paced.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                    >
+                      Does the investment method presented at the club really
+                      work?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Our investment methods are proven and backed by extensive
+                      research.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                    >
+                      Does the investment method presented at the club really
+                      work?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Our team ensures that every investment approach is
+                      carefully analyzed for results.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                    >
+                      Does the investment method presented at the club really
+                      work?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, the strategies are crafted based on successful case
+                      studies and market insights.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="footer-logo mb-4">
+              <a href="./index.html"
+                ><img src="./assets/nav-logo.png" alt=""
+              /></a>
+            </div>
+            <div class="footer-cont">
+              <p class="mb-4">
+                Royal Aviation, A Trusted Choice For Those Valuing Time,
+                Service, And Reliability Explore Unique Features To Customize
+                Your Private Flying Experience Your Way
+              </p>
+              <a href="+91-11-40689002" class="call">
+                <img src="./assets/Phone.png" alt="" />
+                IN +91-11-40689002
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <ul class="footer-list">
+              <li class="pb-3"><a href="">Our Product</a></li>
+              <li class="pb-3"><a href="">Our Service</a></li>
+              <li class="pb-3"><a href="">Membership</a></li>
+              <li class="pb-3"><a href="">Our Fleet</a></li>
+              <li class="pb-3"><a href="">Airports</a></li>
+              <li class="pb-3"><a href="">About Us</a></li>
+              <li class="pb-3"><a href="">E-Book</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <ul class="footer-list">
+              <li class="pb-3"><a href="">Blogs</a></li>
+              <li class="pb-3"><a href="">Career</a></li>
+              <li class="pb-3"><a href="">Contact Us</a></li>
+              <li class="pb-3"><a href="">Privacy Policy</a></li>
+              <li class="pb-3"><a href="">Terms & Condition</a></li>
+              <li class="pb-3"><a href="">News & Media</a></li>
+              <li class="pb-3"><a href="">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="d-flex flex-column h-100">
+              <div class="footer-heading">Get The Latest Update</div>
+              <form
+                action=""
+                class="footer-form d-flex justify-content-between align-items-center rounded-4"
+              >
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit" class="subscribe rounded-4 p-2">
+                  Subscribe
+                </button>
+              </form>
+              <ul
+                class="footer-icon d-flex justify-content-end align-items-center gap-3 mt-auto"
+              >
+                <li>
+                  <a class="footer-icons rounded-circle" href=""
+                    ><img src="./assets/X.png" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="footer-icons rounded-circle text-center" href=""
+                    ><img src="./assets/Instagram.png" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="footer-icons rounded-circle" href=""
+                    ><img src="./assets/Facebook F.png" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="footer-icons rounded-circle" href=""
+                    ><img src="./assets/YouTube Studio.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <ul
+                class="location d-flex justify-content-end mb-5 mt-4 flex-nowrap"
+              >
+                <li><a href="">Delhi</a></li>
+                <li><hr /></li>
+                <li><a href="">Mumbai</a></li>
+                <li><hr /></li>
+                <li><a href="">Bengaluru</a></li>
+                <li><hr /></li>
+                <li><a href="">Dubai</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="float-btn" title="Scroll to Top" onclick="scrollToTop()">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+      <hr />
+      <div class="footer-last">
+        © 2014-2024 All right reserved by
+        <a href="" class="text-capitalize">royal Aviation</a> Services Private
+        Limited
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQuery Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
