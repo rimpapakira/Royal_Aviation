@@ -154,6 +154,9 @@ main::before {
 .heading-btn:hover::before {
   left: 125%;
 }
+.heading-btn>img{
+  margin-left: 5px;
+}
 
 .heading-btn:hover {
   background-color: #f8e898ec;
@@ -573,13 +576,20 @@ background-color: var(--third-color);
   .img-col {
     padding: 30px;
   }
+  /* Footer Section  */
+  .footer-icon{
+    margin-top: 30px !important;
+  }
 }
 @media screen and (max-width: 425px) {
   .heading-btn {
     font-size: 17px;
   }
   .heading {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  p, .description{
+    font-size: 18px;
   }
   /* Banner  */
   .banner {
@@ -587,7 +597,7 @@ background-color: var(--third-color);
     padding-bottom: 0;
   }
   .cont > h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
    /* Services Section */
   .img-col {
@@ -595,14 +605,14 @@ background-color: var(--third-color);
     height: 250px;
   }
   .description {
-    font-size: 20px;
+    font-size: 18px;
   }
   /* Accordion Section */
   .faq-container{
     padding: 30px;
   }
   .accordion-button {
-  font-size: 20px;
+  font-size: 18px;
 }
 
   /* Footer Section */

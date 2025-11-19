@@ -305,6 +305,9 @@ textarea.form-control {
   background: #000;
   inset: 1px;
 }
+.heading-btn>img{
+  margin-left: 5px;
+}
 .heading-btn {
   position: relative;
   color: var(--third-color);
@@ -484,17 +487,25 @@ li > hr {
   .img-col {
     padding: 30px;
   }
+  /* Footer Section  */
+  .footer-icon {
+    margin-top: 30px !important;
+  }
 }
 @media screen and (max-width: 425px) {
   .heading-btn {
     font-size: 17px;
   }
   .heading {
-    font-size: 40px;
+    font-size: 30px;
   }
   /* Banner  */
   .contact-info {
     flex-direction: column;
+  }
+  p,
+  .description {
+    font-size: 18px;
   }
   /* Banner  */
   .banner {
@@ -502,7 +513,7 @@ li > hr {
     padding-bottom: 0;
   }
   .cont > h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   /* Footer Section */

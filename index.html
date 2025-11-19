@@ -22,6 +22,18 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
@@ -85,25 +97,18 @@
     <!-- Banner Section -->
     <section class="banner">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="cont">
-              <h1 class="text-capitalize" data-aos="fade-down">
-                charter flight through out the world
-              </h1>
-              <p class="text-capitalize" data-aos="fade-left">
-                Lorem ipsum dolor sit amet consectetur. Tellus nulla suspendisse
-                est odio orci convallis nibh vitae venenatis. Lorem nisl dui
-                convallis praesent.
-              </p>
-              <a
-                href=""
-                class="button text-capitalize mt-5"
-                data-aos="fade-right"
-                >book your flight <img src="./assets/btn.png" alt=""
-              /></a>
-            </div>
-          </div>
+        <div class="cont">
+          <h1 class="text-capitalize" data-aos="fade-down">
+            charter flight through out the world
+          </h1>
+          <p class="text-capitalize" data-aos="fade-left">
+            Lorem ipsum dolor sit amet consectetur. Tellus nulla suspendisse est
+            odio orci convallis nibh vitae venenatis. Lorem nisl dui convallis
+            praesent.
+          </p>
+          <a href="" class="button text-capitalize mt-5" data-aos="fade-right"
+            >book your flight <img src="./assets/btn.png" alt=""
+          /></a>
         </div>
       </div>
     </section>
@@ -509,8 +514,8 @@
         </div>
       </section>
       <!-- Team Section -->
-      <section class="team">
-        <div class="container">
+      <section class="testimonial-section">
+        <div class="container testimonial-container">
           <div
             class="heading-line-btn d-flex align-items-center justify-content-center mb-4"
             data-aos="zoom-in"
@@ -533,12 +538,9 @@
             Meet The Minds Behind <span>The Mission</span>
           </h2>
 
-          <div class="row">
-            <div class="col-xl-3 col-md-6 col-12">
-              <div
-                class="card mx-lg-auto mx-auto card-custom text-center p-4"
-                data-aos="fade-left"
-              >
+          <div class="testimonial-slider">
+            <div class="testimonial-items">
+              <div class="card mx-lg-auto mx-auto card-custom text-center p-4">
                 <img
                   src="./assets/Mask group (9).png"
                   class="card-img-top d-block"
@@ -553,11 +555,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-12">
-              <div
-                class="card mx-lg-auto mx-auto card-custom text-center p-4"
-                data-aos="fade-up"
-              >
+            <div class="testimonial-items">
+              <div class="card mx-lg-auto mx-auto card-custom text-center p-4">
                 <img
                   src="./assets/Mask group (8).png"
                   class="card-img-top d-block"
@@ -572,11 +571,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-12">
-              <div
-                class="card mx-lg-auto mx-auto card-custom text-center p-4"
-                data-aos="fade-down"
-              >
+            <div class="testimonial-items">
+              <div class="card mx-lg-auto mx-auto card-custom text-center p-4">
                 <img
                   src="./assets/Mask group (6).png"
                   class="card-img-top d-block"
@@ -591,11 +587,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-12">
-              <div
-                class="card mx-lg-auto mx-auto card-custom text-center p-4"
-                data-aos="fade-right"
-              >
+            <div class="testimonial-items">
+              <div class="card mx-lg-auto mx-auto card-custom text-center p-4">
                 <img
                   src="./assets/Mask group (7).png"
                   class="card-img-top d-block"
@@ -647,7 +640,7 @@
                     What Our Clients Say About <span>Flying With Us</span>
                   </h2>
 
-                  <div class="small-card mx-md-auto" data-aos="flip-down">
+                  <div class="small-card mx-auto" data-aos="flip-down">
                     <div class="small-card-img">
                       <img
                         src="./assets/Mask group (14).png"
@@ -665,7 +658,7 @@
                     <div class="star"></div>
                   </div>
 
-                  <div class="small-card mx-md-auto" data-aos="flip-up">
+                  <div class="small-card mx-auto" data-aos="flip-up">
                     <div class="small-card-img">
                       <img
                         src="./assets/Mask group (13).png"
@@ -843,6 +836,7 @@
                   <div class="form-group">
                     <label>Enter Your Name</label>
                     <input
+                      name="name"
                       type="text"
                       class="form-control"
                       placeholder="Enter Your Name"
@@ -851,6 +845,7 @@
                   <div class="form-group">
                     <label>Enter Your Email</label>
                     <input
+                      name="email"
                       type="email"
                       class="form-control"
                       placeholder="Enter Your Email"
@@ -858,7 +853,12 @@
                   </div>
                   <div class="form-group">
                     <label>Enter Your Contact No.</label>
-                    <input type="tel" class="form-control" placeholder="+91" />
+                    <input
+                      name="phone"
+                      type="tel"
+                      class="form-control"
+                      placeholder="+91"
+                    />
                   </div>
                   <div class="heading-border m-auto" data-aos="zoom-in">
                     <button
@@ -891,7 +891,7 @@
                 Service, And Reliability Explore Unique Features To Customize
                 Your Private Flying Experience Your Way
               </p>
-              <a href="+91-11-40689002" class="call">
+              <a href="tel:+91-11-40689002" class="call">
                 <img src="./assets/Phone.png" alt="" />
                 IN +91-11-40689002
               </a>
@@ -926,7 +926,11 @@
                 action=""
                 class="footer-form d-flex justify-content-between align-items-center rounded-4"
               >
-                <input type="email" placeholder="Enter your email" />
+                <input
+                  name="email-address"
+                  type="email"
+                  placeholder="Enter your email"
+                />
                 <button type="submit" class="subscribe rounded-4 p-2">
                   Subscribe
                 </button>
@@ -959,7 +963,7 @@
                 </li>
               </ul>
               <ul
-                class="location d-flex justify-content-end mb-5 mt-4 flex-nowrap"
+                class="location d-flex justify-content-end mb-5 mt-4 flex-nowrap align-items-center"
               >
                 <li><a href="">Delhi</a></li>
                 <li><hr /></li>
@@ -997,6 +1001,11 @@
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+    <!-- Slick Js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

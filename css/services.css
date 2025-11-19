@@ -73,15 +73,9 @@ section,
 footer {
   position: relative;
   z-index: 11;
-  /* background: var(--secondary-color); */
   overflow: hidden;
   padding-top: 100px;
 }
-
-/* .heading-btn:hover {
-  box-shadow: 0 0 10px var(--primary-color);
-  transition: 0.3s;
-} */
 
 .heading {
   font-size: 60px;
@@ -367,6 +361,9 @@ nav {
   transform: skewX(-20deg);
   transition: left 0.6s ease;
 }
+.heading-btn>img{
+  margin-left: 5px;
+}
 
 .heading-btn:hover::before {
   left: 125%;
@@ -432,7 +429,7 @@ nav {
   font-weight: 400;
   white-space: nowrap;
 }
-.table-sort{
+.table-sort {
   font-size: 18px;
   color: var(--third-color);
   font-family: "Clash Grotesk";
@@ -565,7 +562,7 @@ li > hr {
 }
 
 .float-btn:hover {
-background-color: var(--third-color);
+  background-color: var(--third-color);
   color: var(--secondary-color);
 }
 
@@ -599,25 +596,35 @@ background-color: var(--third-color);
   .img-col {
     padding: 30px;
   }
+  /* Footer Section  */
+  .footer-icon {
+    margin-top: 30px !important;
+  }
 }
 @media screen and (max-width: 425px) {
   .heading-btn {
     font-size: 17px;
   }
   .heading {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  p,
+  .description {
+    font-size: 18px;
   }
   /* Banner  */
   .banner {
     padding-top: 0;
   }
   .cont > h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .cont {
     margin-left: 0;
   }
-
+  .button {
+    font-size: 20px;
+  }
   /* Services Section */
   .img-col {
     max-width: 673px;

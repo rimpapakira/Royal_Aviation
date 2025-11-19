@@ -352,6 +352,9 @@ nav {
 .heading-btn {
   margin: 0 auto;
 }
+.heading-btn>img{
+  margin-left: 5px;
+}
 .video-card {
   background: #0c0c0c;
   border-radius: 16px;
@@ -645,6 +648,7 @@ form > .heading-border::after {
   border-bottom: 1px solid var(--primary-color);
   border-radius: 0 0 30px 30px;
   max-width: 320px;
+  margin-top: 130px;
 }
 
 .card-img-top {
@@ -1033,7 +1037,7 @@ li > hr {
 }
 
 .float-btn:hover {
-background-color: var(--third-color);
+  background-color: var(--third-color);
   color: var(--secondary-color);
 }
 
@@ -1112,21 +1116,46 @@ background-color: var(--third-color);
   .img-col {
     padding: 30px;
   }
-
+  /* Footer Section  */
+  .footer-icon {
+    margin-top: 30px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* Testimonial Section */
+  .testimonial-sec-outer {
+    padding: 10px;
+  }
+  .testimonial-card {
+    padding: 15px 10px;
+  }
+  .testimonial-outer {
+    padding: 5px;
+  }
 }
 @media screen and (max-width: 425px) {
   .heading-btn {
     font-size: 17px;
   }
   .heading {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  p,
+  .description {
+    font-size: 18px;
   }
   /* Banner  */
   .banner {
     padding-top: 0;
   }
   .cont > h1 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .cont > p {
+    font-size: 18px;
+  }
+  .button {
+    font-size: 20px;
   }
   /* Services Section */
   .img-col {
@@ -1144,17 +1173,11 @@ background-color: var(--third-color);
   .small-card-content p {
     font-size: 14px;
   }
-  .profile {
-    flex-direction: column;
-  }
   .card-content p {
     font-size: 14px;
   }
   .testimonial-cont > .heading-btn {
     margin: 0 auto 30px auto;
-  }
-  .testimonial-sec-outer {
-    padding: 15px;
   }
   .testimonial-card p {
     font-size: 13px;
@@ -1201,5 +1224,9 @@ background-color: var(--third-color);
   .footer-last,
   .footer-last > a {
     font-size: 15px;
+  }
+  li > hr {
+    width: 2px;
+    height: 20px;
   }
 }
