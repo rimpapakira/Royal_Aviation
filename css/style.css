@@ -406,6 +406,7 @@ nav {
 }
 .drm-cm-tru-card {
   padding-block: 91px;
+  background: var(--secondary-color);
 }
 
 .p-card {
